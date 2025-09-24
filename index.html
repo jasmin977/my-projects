@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Carousel effect */
+      .carousel {
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+  /* Wrapper for each image + title */
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem; /* spacing between title and image */
+    flex-shrink: 0;
+  }
+
+  /* Image styling */
+  .carousel-item {
+    width: 32rem;  /* w-64 */
+    height: 20rem; /* h-40 */
+    object-fit: contain;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* shadow-md */
+    flex-shrink: 0;
+  }
+  .carousel-item-report {
+    width: 14rem;  /* w-64 */
+    height: 20rem; /* h-40 */
+    object-fit: contain;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* shadow-md */
+    flex-shrink: 0;
+  }
+  .carousel-item-thin {
+    width: 32rem;  /* w-64 */
+    height: 16rem; /* h-40 */
+    object-fit: contain;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* shadow-md */
+    flex-shrink: 0;
+  }
+  .carousel-item-mobile {
+    width: 10rem;  /* w-64 */
+    height: 20rem; /* h-40 */
+    object-fit: contain;
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* shadow-md */
+    flex-shrink: 0;
+  }
+
+  /* Title styling */
+  .carousel-title {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #374151; /* text-gray-700 */
+    text-align: center;
+  }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="max-w-6xl mx-auto px-4 py-12">
+      <h1 class="text-4xl font-bold text-center mb-12">My Projects</h1>
+
+      <!-- Project 1 -->
+      <div class="bg-white shadow-md rounded-2xl p-6 mb-12">
+        <h2 class="text-2xl font-semibold mb-2">FindMyBoat</h2>
+        <a
+          href="https://findmyboat.com/"
+          target="_blank"
+          class="text-blue-600 underline"
+          >https://findmyboat.com/</a
+        >
+        <p class="mt-4 text-gray-600">
+          A yacht rental service platform with boat management, booking
+          system,calandar management chat with owners, personalized quotations,
+          and secure payments.
+        </p>
+
+        <!-- Carousel -->
+     <div class="flex mt-6 overflow-x-auto space-x-6 h-96">
+
+  <!-- Authentication -->
+  <div class="carousel-container">
+    <p class="carousel-title">Login</p>
+    <img src="public/findmyboat/LOGIN (1).jpg" class="carousel-item" alt="Login">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Register</p>
+    <img src="public/findmyboat/REGISTER.jpg" class="carousel-item" alt="Register">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Password Reset</p>
+    <img src="public/findmyboat/PASSWORD RESET.jpg" class="carousel-item" alt="Password Reset">
+  </div>
+
+  <!-- Home / Listing -->
+  <div class="carousel-container">
+    <p class="carousel-title">Home Page</p>
+    <img src="public/findmyboat/Boat Detail - Owner view.jpg" class="carousel-item" alt="Home Page">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Listing Pagination</p>
+    <img src="public/findmyboat/Listing pagination.jpg" class="carousel-item" alt="Listing Pagination">
+  </div>
+
+  <!-- Boat Detail & Gallery -->
+  <div class="carousel-container">
+    <p class="carousel-title">Boat Detail</p>
+    <img src="public/findmyboat/Boat Detail - Owner view.jpg" class="carousel-item" alt="Boat Detail">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Gallery</p>
+    <img src="public/findmyboat/Boat Detail - Gallery.jpg" class="carousel-item" alt="Gallery">
+  </div>
+
+  <!-- Booking & Chat -->
+  <div class="carousel-container">
+    <p class="carousel-title">Booking Request</p>
+    <img src="public/findmyboat/Booking request.jpg" class="carousel-item" alt="Booking Request">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Chat</p>
+    <img src="public/findmyboat/Chat owner.jpg" class="carousel-item" alt="Chat">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Quotation</p>
+    <img src="public/findmyboat/Create quotation.jpg" class="carousel-item" alt="Create Quotation">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Bookings Renter</p>
+    <img src="public/findmyboat/Bookings renter.jpg" class="carousel-item" alt="Bookings Renter">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Review</p>
+    <img src="public/findmyboat/Review.jpg" class="carousel-item" alt="Review">
+  </div>
+
+  <!-- Upload Boat -->
+  
+
+  <div class="carousel-container">
+    <p class="carousel-title">Upload Boat - General</p>
+    <img src="public/findmyboat/Upload a boat General.jpg" class="carousel-item" alt="Upload Boat General">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Upload Boat - Location Selected</p>
+    <img src="public/findmyboat/Upload a boat Location - City selected.jpg" class="carousel-item" alt="Upload Boat Location Selected">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Upload Boat - Policy</p>
+    <img src="public/findmyboat/Upload a boat Policy.jpg" class="carousel-item" alt="Upload Boat Policy">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Upload Boat - Conditions</p>
+    <img src="public/findmyboat/Upload a boat Conditions.jpg" class="carousel-item" alt="Upload Boat Conditions">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Upload Boat - Photos + cover photo</p>
+    <img src="public/findmyboat/photo menu option.jpg" class="carousel-item" alt="photo menu option">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Finish boat upload</p>
+    <img src="public/findmyboat/Upload a boat 1st screen.jpg" class="carousel-item" alt="Finish boat upload">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Boat - Price</p>
+    <img src="public/findmyboat/Create boat - Price step - adding price period.jpg" class="carousel-item" alt="Create Boat Price">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Boat - Calendar</p>
+    <img src="public/findmyboat/Create boat - Calendar - Unavailable period added.jpg" class="carousel-item" alt="Create Boat Calendar">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Boat - Add-ons & Equipment</p>
+    <img src="public/findmyboat/Create boat - Add-ons step 3.jpg" class="carousel-item" alt="Create Boat Add-ons & Equipment">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Boat - Size</p>
+    <img src="public/findmyboat/Create boat - Size.jpg" class="carousel-item" alt="Create Boat Size">
+  </div>
+
+  <div class="carousel-container">
+    <p class="carousel-title">Create Boat - Legacy / Legal Docs</p>
+    <img src="public/findmyboat/Create boat - Legal docs.jpg" class="carousel-item" alt="Create Boat Legal Docs">
+  </div>
+  <div class="carousel-container">
+  <p class="carousel-title">Welcome Email Sent to User</p>
+    <img src="public/findmyboat/Email.jpg" class="carousel-item" alt="Email">
+  </div>
+
+</div>
+
+
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-md rounded-2xl mb-12 p-6">
+        <h2 class="text-2xl font-semibold mb-2">Konklua</h2>
+        <a
+          href="https://konklua.com/login"
+          target="_blank"
+          class="text-blue-600 underline"
+          >https://konklua.com/login</a
+        >
+        <p class="mt-4  ">
+            A real estate market study platform to create promotions, compare trends, 
+    and generate custom reports with subscription management and account features
+    </p><p class="mt-2 text-sm text-gray-600">
+          note : its a closed collaboration platform that requires payment to access so here
+          are some screenshots showcasing the features and interface.
+        </p>
+
+        <!-- Carousel -->
+     <div class="relative mt-6 overflow-hidden rounded-xl">
+        <div class="flex h-96 carousel overflow-x-auto space-x-6">
+
+  <!-- Auth Screens -->
+  <div class="carousel-container">
+    <p class="carousel-title">Login</p>
+    <img src="public/takso/LOGIN.jpg" alt="Login" class="carousel-item">
+  </div>
+  <div class="carousel-container">
+    <p class="carousel-title">Register</p>
+    <img src="public/takso/REGISTER - MAIN USER.jpg" alt="Register" class="carousel-item">
+  </div>
+  <div class="carousel-container">
+    <p class="carousel-title">Password Reset</p>
+    <img src="public/takso/PASSWORD RESET - EMAIL.jpg" alt="Password Reset" class="carousel-item">
+  </div>
+
+  <!-- Account Screens -->
+  <div class="carousel-container">
+    <p class="carousel-title">Profile</p>
+    <img src="public/takso/MY ACCOUNT - PROFILE.jpg" alt="Profile" class="carousel-item">
+  </div>
+  <div class="carousel-container">
+    <p class="carousel-title">Subscription Settings</p>
+    <img src="public/takso/MY ACCOUNT - SUBSCRIPTION.jpg" alt="Subscription Settings" class="carousel-item">
+  </div>
+
+  <!-- Subscriptions -->
+  <div class="carousel-container">
+    <p class="carousel-title">Checkout</p>
+    <img src="public/takso/SUBSCRIPTIONS - CHECKOUT.jpg" alt="Checkout" class="carousel-item">
+  </div>
+  <div class="carousel-container">
+    <p class="carousel-title">Monthly Subscription</p>
+    <img src="public/takso/SUBSCRIPTIONS - MONTHLY.jpg" alt="Monthly Subscription" class="carousel-item">
+  </div>
+
+<!-- Dashboard / Main -->
+<div class="carousel-container">
+  <p class="carousel-title">Market Studies Dashboard</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO KONKLUA.jpg" alt="Market Studies Dashboard" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Studies Created</p>
+  <img src="public/takso/KONKLUA VIEW - MARKET STUDIES CREATED - TAG & SHARE OPTION.jpg" alt="Market Studies Created" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Studies Main</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - MAIN.jpg" alt="Market Studies Main" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Studies Average</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - AVERAGE MAIN.jpg" alt="Market Studies Average" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Studies Average by Zip Code</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - AVERAGE MAIN - ZIP CODE DEPLOYED.jpg" alt="Market Studies Average by Zip Code" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Created Studies</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - MARKET STUDIES CREATED.jpg" alt="Created Studies" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Study History</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - MARKET STUDY history.jpg" alt="Market Study History" class="carousel-item">
+</div>
+
+<!-- Market Study Comparisons -->
+<div class="carousel-container">
+  <p class="carousel-title">Market Study Comparison Tables</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - MARKET STUDY COMPARATION TABLES DEFAULT VIEW.jpg" alt="Market Study Comparison Tables" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Market Study Comparison Extras</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - MARKET STUDY COMPARATION EXTRAS.jpg" alt="Market Study Comparison Extras" class="carousel-item">
+</div>
+
+<!-- Promotions -->
+<div class="carousel-container">
+  <p class="carousel-title">Create New Study</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - CREATE NEW.jpg" alt="Create New Study" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Create Promotion Step 1</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - CREATE PROMOTION  STEP 1.jpg" alt="Create Promotion Step 1" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Create Promotion Step 2</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - CREATE PROMOTION STEP 2.jpg" alt="Create Promotion Step 2" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Create Typology</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - CREATE TIPOLOGY PLURIFAMILIAR.jpg" alt="Create Typology" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Promotion Overview</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - PROMOTION OVERVIEW.jpg" alt="Promotion Overview" class="carousel-item">
+</div>
+<div class="carousel-container">
+  <p class="carousel-title">Promotions Compared</p>
+  <img src="public/takso/ESTUDIOS DE MERCADO - PROMOTIONS COMPARED.jpg" alt="Promotions Compared" class="carousel-item">
+</div>
+
+<div class="carousel-container">
+<p class="carousel-title">A4 PDF Report – Sample Pages</p>
+  <img src="public/takso/report/A4 - 1.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+      <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 2.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+          <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 3.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+          <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 5.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+          <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 9.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+          <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 14.png" alt="report" class="carousel-item-report">
+</div>
+<div class="carousel-container">
+          <p class="carousel-title">.</p>
+
+   <img src="public/takso/report/A4 - 17.png" alt="report" class="carousel-item-report">
+</div>
+
+</div>
+    
+      </div>
+    </div>
+
+
+    <div class="bg-white shadow-md rounded-2xl p-6 mb-12">
+  <h2 class="text-2xl font-semibold mb-2">Tasify</h2>
+  <p class="mt-4 text-gray-600">
+    A mobile application for restaurant reviews and recommendations with scan and map-based nearby restaurant discovery.
+  </p>
+
+  <!-- Carousel -->
+  <div class="flex mt-6 overflow-x-auto space-x-6 h-96">
+
+    <!-- Authentication -->
+    <div class="carousel-container">
+      <p class="carousel-title">Login</p>
+      <img src="public/tastify/login (1).jpg" class="carousel-item-mobile" alt="Login">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Create Account</p>
+      <img src="public/tastify/createaccount.jpg" class="carousel-item-mobile" alt="Create Account">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Verify Account - Step 1</p>
+      <img src="public/tastify/verify1.jpg" class="carousel-item-mobile" alt="Verify Step 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Verify Account - Step 2</p>
+      <img src="public/tastify/verify3.jpg" class="carousel-item-mobile" alt="Verify Step 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Verify Account - Step 3</p>
+      <img src="public/tastify/verify2.jpg" class="carousel-item-mobile" alt="Verify Step 3">
+    </div>
+
+    <!-- Home & Search -->
+    <div class="carousel-container">
+      <p class="carousel-title">Home Screen 1</p>
+      <img src="public/tastify/home1.jpg" class="carousel-item-mobile" alt="Home 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Home Screen 2</p>
+      <img src="public/tastify/home2.jpg" class="carousel-item-mobile" alt="Home 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Search Restaurants</p>
+      <img src="public/tastify/search.jpg" class="carousel-item-mobile" alt="Search">
+    </div>
+
+    <!-- Map & Scan -->
+    <div class="carousel-container">
+      <p class="carousel-title">Map View 1</p>
+      <img src="public/tastify/map1.jpg" class="carousel-item-mobile" alt="Map 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Map View 2</p>
+      <img src="public/tastify/map2.jpg" class="carousel-item-mobile" alt="Map 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Scan Restaurant - Step 1</p>
+      <img src="public/tastify/scan1.jpg" class="carousel-item-mobile" alt="Scan 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Scan Restaurant - Step 2</p>
+      <img src="public/tastify/scan2.jpg" class="carousel-item-mobile" alt="Scan 2">
+    </div>
+
+    <!-- Restaurant Profile -->
+    <div class="carousel-container">
+      <p class="carousel-title">Restaurant Profile 1</p>
+      <img src="public/tastify/restoprofile1.jpg" class="carousel-item-mobile" alt="Resto Profile 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Restaurant Profile 2</p>
+      <img src="public/tastify/restoprofile2.jpg" class="carousel-item-mobile" alt="Resto Profile 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Restaurant Profile 3</p>
+      <img src="public/tastify/restoprofile3.jpg" class="carousel-item-mobile" alt="Resto Profile 3">
+    </div>
+
+    <!-- User Profile / Settings -->
+    <div class="carousel-container">
+      <p class="carousel-title">User Profile</p>
+      <img src="public/tastify/profile.jpg" class="carousel-item-mobile" alt="User Profile">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Settings</p>
+      <img src="public/tastify/settings.jpg" class="carousel-item-mobile" alt="Settings">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Saved Restaurants</p>
+      <img src="public/tastify/saved1.jpg" class="carousel-item-mobile" alt="Saved Restaurants">
+    </div>
+
+    <!-- Reviews -->
+    <div class="carousel-container">
+      <p class="carousel-title">Add Review</p>
+      <img src="public/tastify/addreview.jpg" class="carousel-item-mobile" alt="Add Review">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Edit Review</p>
+      <img src="public/tastify/edit1.jpg" class="carousel-item-mobile" alt="Edit Review">
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<!-- projet 4 -->
+     <div class="bg-white shadow-md rounded-2xl p-6 mb-12">
+  <h2 class="text-2xl font-semibold mb-2">Agile Deep Assistant</h2>
+  <p class="mt-4 text-gray-600">
+    A web and mobile platform optimizing SCRUM processes with automated user story generation, developer assignment suggestions, interactive sprint rooms in React Native, voting, task estimation, AI-driven retrospectives, monthly calendar, real-time notifications, and actionable insights.
+  </p>
+
+  <!-- Carousel -->
+  <div class="flex mt-6 overflow-x-auto space-x-6 h-96">
+
+    <!-- Sprint Creation & Planning -->
+    <div class="carousel-container">
+      <p class="carousel-title">Create Sprint</p>
+      <img src="public/assitant-agile/new-sprint-step1.png" class="carousel-item-thin" alt="New Sprint Step 1">
+    </div>
+
+   
+
+    <div class="carousel-container">
+      <p class="carousel-title">Sprint List</p>
+      <img src="public/assitant-agile/sprint-list.png" class="carousel-item-thin" alt="Sprint List">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Sprint Overview</p>
+      <img src="public/assitant-agile/sprint.png" class="carousel-item-thin" alt="Sprint Overview">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Sprint Backlog</p>
+      <img src="public/assitant-agile/sprintbacklog.png" class="carousel-item-thin" alt="Sprint Backlog">
+    </div>
+    <div class="carousel-container">
+      <p class="carousel-title">Developer View - Room Info</p>
+      <img src="public/assitant-agile/sprint-planning-dev-view-room-info.jpg" class="carousel-item-mobile" alt="Developer Room Info">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Estimation Room</p>
+      <img src="public/assitant-agile/sprint-planning-estimation-room.png" class="carousel-item-thin" alt="Estimation Room">
+    </div>
+
+     <div class="carousel-container">
+      <p class="carousel-title">Projection</p>
+      <img src="public/assitant-agile/sprint-planning-projection.png" class="carousel-item-thin" alt="Projection">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Story Details</p>
+      <img src="public/assitant-agile/sprint-planning-developer-view-story-detail.jpg" class="carousel-item-mobile" alt="Story Details">
+    </div>
+    <div class="carousel-container">
+      <p class="carousel-title">Estimate Developer</p>
+      <img src="public/assitant-agile/estime-dev.jpg" class="carousel-item-mobile" alt="Estimate Developer">
+    </div>
+    
+    
+    
+   
+
+
+    <div class="carousel-container">
+      <p class="carousel-title">Assign Developers</p>
+      <img src="public/assitant-agile/sprint-planning-assign-dev.png" class="carousel-item-thin" alt="Assign Developers">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Developer Assignment</p>
+      <img src="public/assitant-agile/sprint-planning-dev-assignmnt.jpg" class="carousel-item-mobile" alt="Developer Assignment">
+    </div>
+
+    
+
+    <div class="carousel-container">
+      <p class="carousel-title">Session Finished View</p>
+      <img src="public/assitant-agile/sprint-planning-dev-view-session-finished.jpg" class="carousel-item-mobile" alt="Session Finished">
+    </div>
+
+     <div class="carousel-container">
+      <p class="carousel-title">Voting History</p>
+      <img src="public/assitant-agile/voting-his.png" class="carousel-item" alt="Voting History">
+    </div>
+   
+    
+ <div class="carousel-container">
+    <p class="carousel-title">Detailed View Sprints</p>
+    <img src="public/assitant-agile/detaild-view-sprints.png" class="carousel-item-thin" alt="Detailed View Sprints">
+  </div>
+   
+  
+    <div class="carousel-container">
+      <p class="carousel-title">Developer Calendar</p>
+      <img src="public/assitant-agile/dev-calandar.jpg" class="carousel-item-mobile" alt="Developer Calendar">
+    </div>
+
+    <!-- Retrospective & Insights -->
+    <div class="carousel-container">
+      <p class="carousel-title">New Retrospective</p>
+      <img src="public/assitant-agile/new-retro.png" class="carousel-item-thin" alt="New Retrospective">
+    </div>
+      <div class="carousel-container">
+      <p class="carousel-title">Retro Ready</p>
+      <img src="public/assitant-agile/retro-ready.png" class="carousel-item-thin" alt="Retro Ready">
+    </div>
+
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Step 1</p>
+      <img src="public/assitant-agile/retro-step-1.png" class="carousel-item-thin" alt="Retro Step 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Step 2</p>
+      <img src="public/assitant-agile/retro-step2.png" class="carousel-item-thin" alt="Retro Step 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Voting</p>
+      <img src="public/assitant-agile/retro-vote.png" class="carousel-item-thin" alt="Retro Voting">
+    </div>
+
+  
+    
+    <div class="carousel-container">
+      <p class="carousel-title">Developer Brainstorm Step</p>
+      <img src="public/assitant-agile/retropspective-developer-view-brainstorm-step.jpg" class="carousel-item-mobile" alt="Developer Brainstorm">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Summary 1</p>
+      <img src="public/assitant-agile/retropspective-developer-view-summary-1.jpg" class="carousel-item-mobile" alt="Retro Summary 1">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Summary 2</p>
+      <img src="public/assitant-agile/retropspective-developer-view-summary-2.jpg" class="carousel-item-mobile" alt="Retro Summary 2">
+    </div>
+
+    <div class="carousel-container">
+      <p class="carousel-title">Retro Voting Step</p>
+      <img src="public/assitant-agile/retropspective-developer-view-vote-step.jpg" class="carousel-item-mobile" alt="Retro Voting Step">
+    </div>
+    <div class="carousel-container">
+      <p class="carousel-title">Close Retro</p>
+      <img src="public/assitant-agile/retro-close.png" class="carousel-item-thin" alt="Close Retro">
+    </div>
+
+
+    <div class="carousel-container">
+      <p class="carousel-title">Notifications Developer View</p>
+      <img src="public/assitant-agile/notif-developer-view.jpg" class="carousel-item-mobile" alt="Notifications Developer View">
+    </div>
+
+    
+
+   
+
+  </div>
+</div>
+
+  </body>
+</html>
